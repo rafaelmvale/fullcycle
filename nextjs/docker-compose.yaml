@@ -8,6 +8,6 @@ services:
     volumes:
       - .:/home/node/app
     extra_hosts:
-      - "kubernetes.docker.internal:127.0.0.1"
+      - "kubernetes.docker.internal:127.17.0.1"
   
   

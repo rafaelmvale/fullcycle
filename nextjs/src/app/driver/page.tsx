@@ -15,7 +15,7 @@ export function DriverPage(){
   const map = useMap(mapContainerRef)
 
   const {data: routes, error, isLoading} = useSWR<Route[]>(
-    'http://localhost:3002/api/routes', 
+    'http://localhost:3000/routes', 
     fetcher, 
     {
       fallbackData: []

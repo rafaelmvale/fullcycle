@@ -72,7 +72,7 @@ export function NewRoutePage() {
   async function createRoute() {
     const startAddress = directionsData!.routes[0].legs[0].start_address;
     const endAddress = directionsData!.routes[0].legs[0].end_address;
-    const response = await fetch(`http://localhost:3002/api/routes`, {
+    const response = await fetch(`http://localhost:3000/routes`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
